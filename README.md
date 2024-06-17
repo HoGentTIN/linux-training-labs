@@ -18,6 +18,8 @@ If your physical system is a recent version Windows, install these from an Admin
 > winget install HashiCorp.Vagrant
 ```
 
+Otherwise, download and install the applications from their respective home pages.
+
 On Linux, use your package manager to install these tools.
 
 ## Usage
@@ -33,3 +35,12 @@ $ vagrant up
 The exercise assignment should be in the `README.md` file in the same directory, or in the relevant book chapter of the Linux training course material.
 
 The lab environments are based on [bertvv/vagrant-shell-skeleton](https://github.com/bertvv/vagrant-shell-skeleton) that contains some scaffolding code to get you started with Vagrant without having to learn Ruby or how to write Vagrantfiles.
+
+## Contents
+
+Labs are shown in alphabetical order, but the [vagrant/](vagrant/) directory is the best place to start.
+
+- [troubleshooting/](troubleshooting/): troubleshooting network services.
+    - <https://hogenttin.github.io/linux-training-hogent/opslinux/troubleshooting/>
+- [vagrant/](vagrant/): reproducible virtual environments with Vagrant. **Ideal to get started!**
+    - <https://hogenttin.github.io/linux-training-hogent/opslinux/vagrant/>
