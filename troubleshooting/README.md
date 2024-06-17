@@ -9,7 +9,7 @@ In this lab environment, you can practice [bottom up troubleshooting](https://ho
 
 The database server is configured correctly, but the web server is not. Your task is to troubleshoot the web server and get it working.
 
-When successful, you should be able to see the webpage hosted on `webt` from your host system by pointing a web browser to <http://192.168.56.72/>:
+When successful, you should be able to see the webpage hosted on `webt` from your host system by pointing a web browser to <http://192.168.56.72/test.php>:
 
 ![PHP application running on webt](result.png)
 

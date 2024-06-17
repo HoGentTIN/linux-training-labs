@@ -65,10 +65,10 @@ start_basic_services() {
 }
 
 configure_webserver() {
-  log "Installing index page"
-  cp /vagrant/www/index.php /home/vagrant
-  cp /vagrant/www/index.php /var/www/html/
-  chcon -t user_home_t /var/www/html/index.php
+  log "Installing test page"
+  cp /vagrant/www/test.php /home/vagrant
+  cp /vagrant/www/test.php /var/www/html/
+  chcon -t user_home_t /var/www/html/test.php
 
   log "Setting port number"
   sed -i 's/Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf
