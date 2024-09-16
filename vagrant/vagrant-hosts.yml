@@ -48,5 +48,5 @@
   ip: 192.168.56.21
 
 - name: ubuntu
-  box: bento/ubuntu-22.04
+  box: bento/ubuntu-24.04
   ip: 192.168.56.22
