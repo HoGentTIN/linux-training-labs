@@ -41,7 +41,7 @@ The lab environments are based on [bertvv/vagrant-shell-skeleton](https://github
 Labs are shown in alphabetical order, but the [vagrant/](vagrant/) directory is the best place to start.
 
 - [dns-bind](dns-bind/): the BIND DNS server
-    - <https://hogenttin.github.io/linux-training-hogent/opslinux/dns-bind/>
+    - <https://hogenttin.github.io/linux-training-hogent/opslinux/dns_bind/>
 - [troubleshooting/](troubleshooting/): troubleshooting network services.
     - <https://hogenttin.github.io/linux-training-hogent/opslinux/troubleshooting/>
 - [vagrant/](vagrant/): reproducible virtual environments with Vagrant. **Ideal to get started!**
