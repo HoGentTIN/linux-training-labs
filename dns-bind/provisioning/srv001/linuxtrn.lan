@@ -1,0 +1,34 @@
+;; Zone file for linuxtrn.lan
+$ORIGIN linuxtrn.lan.
+$TTL 1W
+
+@ IN SOA srv001.linuxtrn.lan. hostmaster.linuxtrn.lan. (
+         24100102  ; Serial
+         1D        ; Refresh time
+         1H        ; Retry time
+         1W        ; Expiry time
+         1D )      ; Negative cache TTL
+
+; Name servers
+
+          IN  NS     srv001
+          IN  NS     srv002
+
+srv001    IN  A      172.16.76.251
+srv002    IN  A      172.16.76.252
+
+; Mail server
+
+@         IN  MX     10 srv003
+
+srv003    IN  A      172.16.76.3
+
+smtp      IN  CNAME  srv003
+imap      IN  CNAME  srv003
+
+; Web server
+
+srv004    IN  A      172.16.76.4
+@         IN  A      172.16.76.4
+
+www       IN  CNAME  srv004

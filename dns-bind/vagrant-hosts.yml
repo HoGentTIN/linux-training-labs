@@ -1,0 +1,17 @@
+# vagrant-hosts.yml - List of hosts to be created by Vagrant.
+#
+# For more information about the possible settings, see the documentation at
+# <https://github.com/bertvv/ansible-skeleton>
+---
+
+- name: srv001
+  box: bento/almalinux-9
+  ip: 172.16.76.251
+  cpus: 1
+  memory: 512
+
+- name: srv002
+  box: bento/almalinux-9
+  ip: 172.16.76.252
+  cpus: 1
+  memory: 512
