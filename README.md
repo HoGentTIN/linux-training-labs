@@ -40,6 +40,8 @@ The lab environments are based on [bertvv/vagrant-shell-skeleton](https://github
 
 Labs are shown in alphabetical order, but the [vagrant/](vagrant/) directory is the best place to start.
 
+- [dhcp](dhcp/): ISC DHCP server
+    - <https://hogenttin.github.io/linux-training-hogent/opslinux/dhcp/>
 - [dns-bind](dns-bind/): the BIND DNS server
     - <https://hogenttin.github.io/linux-training-hogent/opslinux/dns_bind/>
 - [troubleshooting/](troubleshooting/): troubleshooting network services.
