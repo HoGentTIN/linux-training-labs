@@ -37,8 +37,16 @@ source ${PROVISIONING_SCRIPTS}/util.sh
 
 log "Starting server specific provisioning tasks on ${HOSTNAME}"
 
-# TODO: insert code here, e.g. install Apache, add users (see the provided
-# functions in utils.sh), etc.
+log "Add entry to hosts file to avoid DNS lookup timeouts"
+cat > /etc/hosts << _EOF_
+127.0.0.1	localhost  localhost.localdomain
+127.0.1.1	debian	   debian.localdomain
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+_EOF_
 
 # Add a user add them to the 'sudo' group
 if ! getent passwd "${user}" &> /dev/null; then
@@ -57,4 +65,5 @@ fi
 apt-get update
 apt-get install -y \
   bash-completion \
-  python3-pip 
+  tcpdump
+
