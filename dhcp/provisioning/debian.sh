@@ -54,7 +54,6 @@ log "Install useful packages"
 apt-get update
 apt-get install -y \
   bash-completion \
-  python3-pip \
   tcpdump
 
 log "Copy hosts file to avoid DNS lookup timeouts"
