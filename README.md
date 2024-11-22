@@ -44,6 +44,8 @@ Labs are shown in alphabetical order, but the [vagrant/](vagrant/) directory is 
     - <https://hogenttin.github.io/linux-training-hogent/opslinux/dhcp/>
 - [dns-bind](dns-bind/): the BIND DNS server
     - <https://hogenttin.github.io/linux-training-hogent/opslinux/dns_bind/>
+- [raid/](raid/): software RAID
+    - <https://hogenttin.github.io/linux-training-hogent/opslinux/storage_raid/>
 - [troubleshooting/](troubleshooting/): troubleshooting network services.
     - <https://hogenttin.github.io/linux-training-hogent/opslinux/troubleshooting/>
 - [vagrant/](vagrant/): reproducible virtual environments with Vagrant. **Ideal to get started!**
