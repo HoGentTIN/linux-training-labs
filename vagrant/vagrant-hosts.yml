@@ -36,17 +36,17 @@
 ---
 
 - name: el
-  box: bento/almalinux-9
-  ip: 192.168.56.11
+  box: bento/almalinux-10
+  ip: 192.168.56.10
 
 - name: fedora
-  box: bento/fedora-latest
-  ip: 192.168.56.12
+  box: bento/fedora-42
+  ip: 192.168.56.42
 
 - name: debian
-  box: bento/debian-12.4
-  ip: 192.168.56.21
+  box: bento/debian-13
+  ip: 192.168.56.13
 
 - name: ubuntu
   box: bento/ubuntu-24.04
-  ip: 192.168.56.22
+  ip: 192.168.56.24
