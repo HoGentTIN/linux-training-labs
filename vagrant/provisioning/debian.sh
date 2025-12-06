@@ -50,6 +50,13 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 _EOF_
 
+# Fix problem with missing nameserver in resolv.conf
+if ! grep -q '^nameserver' /etc/resolv.conf; then
+  printf 'nameserver 10.0.2.3\n' >> /etc/resolv.conf
+else
+  sed -i 's/^nameserver.*$/nameserver 10.0.2.3/' /etc/resolv.conf
+fi
+
 # Add a user add them to the 'sudo' group
 if ! getent passwd "${user}" &> /dev/null; then
   log "Adding user '${user}'"
