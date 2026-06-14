@@ -40,13 +40,13 @@
   ip: 192.168.56.10
 
 - name: fedora
-  box: bento/fedora-42
-  ip: 192.168.56.42
+  box: bento/fedora-44
+  ip: 192.168.56.44
 
 - name: debian
   box: bento/debian-13
   ip: 192.168.56.13
 
 - name: ubuntu
-  box: bento/ubuntu-24.04
-  ip: 192.168.56.24
+  box: bento/ubuntu-26.04
+  ip: 192.168.56.26
